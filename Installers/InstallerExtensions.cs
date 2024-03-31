@@ -1,4 +1,5 @@
 ﻿using System.Runtime.CompilerServices;
+using Tweetbook.Domain;
 
 namespace Tweetbook.Installers
 {

@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Tweetbook.Data;
 using Tweetbook.Domain;
-using static Tweetbook.Contracts.v1.ApiRoutes;
 
 namespace Tweetbook.Services
 {

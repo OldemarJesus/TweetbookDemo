@@ -12,9 +12,11 @@ namespace Tweetbook.Installers
         {
             var connectionString = configuration.GetConnectionString("Default");
             services.AddDbContext<DataContext>(options => options.UseSqlServer(connectionString));
+
             services.AddIdentity<IdentityUser, IdentityRole>()
                 .AddEntityFrameworkStores<DataContext>();
-            services.AddScoped<IPostService, PostService>();
+            //services.AddScoped<IPostService, PostService>();
+            services.AddSingleton<IPostService, CosmosPostService>();
         }
     }
 }
